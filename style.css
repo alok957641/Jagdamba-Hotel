@@ -1,0 +1,800 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: black
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Nata+Sans:wght@100..900&display=swap');
+
+.header_box {
+    width: 100%;
+    min-height: 570px;
+    background: url('WhatsApp Image 2025-08-11 at 21.11.13_47bcd224.jpg') no-repeat center center/cover;
+
+
+}
+
+
+.hrader_content {
+    max-height: 340px;
+    display: flex;
+    justify-content: space-between;
+    color: aliceblue;
+    padding: 1.4rem 3.5rem;
+
+    text-align: center;
+
+}
+.hdr_nav ul li{
+    color: white;
+}
+
+.hdr_nav ul li:hover {
+    color: rgb(89, 13, 219);
+}
+.logo_box {
+    display: flex;
+    gap: 12px;
+}
+
+.hdr_logo {
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 2px 0px 10px white;
+}
+
+.hdr_txt {
+    font-size: 25px;
+    font-style: initial;
+    color: rgb(187, 148, 224);
+
+}
+
+
+.navigation_bar {
+    display: flex;
+    list-style-type: none;
+    gap: 85px;
+    font-size: 13px;
+}
+
+.header_text_box button{
+    color: white;
+}
+.header_text_box button:hover{
+    color:yellow;
+    background-color: #05080a;
+
+}
+    
+
+.header_text_box {
+    margin-top: 120px;
+    color: white;
+    padding-left: 70px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    animation: slide 0.8s ease-in-out;
+
+}
+
+@keyframes slide {
+    0% {
+        transform: translatex(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+}
+
+.explore {
+    width: 120px;
+    height: 10px;
+    background-color: blue;
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.txt-box-span {
+    color: rgb(165, 216, 98);
+    font-size: 25px;
+}
+
+.txt-box-h2 {
+    color: aqua;
+    font-size: 35px;
+
+}
+
+.txt-box-p {
+    color: rgb(163, 180, 180);
+    font-size: 17px;
+}
+
+.menu_button {
+    display: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: white;
+    padding: 5px;
+
+}
+
+.list-img {
+    height: 15px;
+    width: 30px;
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width:768px) {
+    .header_box {
+        width: 100%;
+        min-height: 370px;
+        background: url('WhatsApp Image 2025-08-11 at 21.11.13_47bcd224.jpg') no-repeat center left/cover;
+
+
+    }
+
+
+    .hrader_content {
+        max-height: 240px;
+        display: flex;
+        justify-content: space-between;
+        color: aliceblue;
+        padding: 1rem 1rem;
+
+        text-align: center;
+
+    }
+
+    .navigation_bar {
+        display: none;
+
+    }
+
+    .menu_button {
+        display: block;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: 600;
+        background-color: white;
+        padding: 3px;
+
+    }
+
+    .list-img {
+        height: 10px;
+        width: 20px;
+        border-radius: 10px;
+    }
+
+
+    .header_text_box {
+        margin-top: 50px;
+        color: white;
+        padding-left: 12px;
+        padding-right: 55px;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+
+    }
+
+    .explore {
+        width: 100px;
+        height: 10px;
+        background-color: blue;
+        padding: 1rem 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        border: 1.6px solid rgb(179, 173, 173);
+        font-size: 10px;
+        color: aliceblue;
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
+    }
+
+    .txt-box-span {
+        color: rgb(165, 216, 98);
+        font-size: 15px;
+    }
+
+    .txt-box-h2 {
+        color: aqua;
+        font-size: 17px;
+
+    }
+
+    .txt-box-p {
+        color: rgb(163, 180, 180);
+        font-size: 6px;
+    }
+
+
+
+
+}
+
+
+.hero-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    background-color: rgb(32, 4, 4);
+
+
+
+}
+
+.flavor {
+    font-size: 25px;
+    color: aqua;
+    margin-top: 10px;
+}
+
+.flavor_p {
+    font-size: 11px;
+    color: rgb(175, 200, 200);
+    margin-top: 10px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* background-color: rgb(185, 165, 136);  */
+    padding: 3rem 10rem;
+    gap: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.veg-img {
+    width: 100%;
+    min-height: 300px;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.non-veg-img {
+    width: 100%;
+    height: 300px;
+    /* overflow: hidden; */
+    overflow-y: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+
+}
+
+.card1 {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(255, 239, 239);
+    border-radius: 10px;
+    gap: 25px;
+    box-shadow: 2px 2px 20px 0 white;
+    animation: slideup 0.8s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
+}
+
+.card1 a:hover{
+    color: blue;
+}
+
+@keyframes slideup {
+    0% {
+        transform: translatex(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+}
+
+.card1:hover img {
+    transform: scale(1.1);
+    border-radius: 80%;
+}
+
+.veg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+}
+
+.non-veg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+
+}
+
+.veg span {
+    color: rgb(10, 39, 230);
+    font-size: 15px;
+    font-weight: 800;
+}
+
+
+.see-menu {
+    margin-bottom: 10px;
+}
+
+.explore-veg {
+    background-color: rgb(111, 118, 214);
+    border-radius: 8px;
+    padding: 5px 7px;
+    text-decoration: none;
+    color: white;
+    box-shadow: 1px 1px 2px blue;
+    font-size: 12px;
+
+
+}
+
+.span-non-veg {
+    color: rgb(10, 39, 230);
+    font-size: 15px;
+    font-weight: 800;
+}
+
+
+.veg p {
+    color: black;
+    font-size: 12px;
+}
+
+.non-veg p {
+    color: black;
+    font-size: 12px;
+}
+
+@media screen and (max-width:768px) {
+    .hero-content {
+        padding: 1rem;
+
+
+
+    }
+
+    .flavor {
+        font-size: 18px;
+    }
+
+    .flavor_p {
+        font-size: 9px;
+        padding: 0 10px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        gap: 40px;
+        /* margin-top: 10px;
+        margin-bottom: 20px; */
+    }
+
+    .veg-img,
+    .non-veg-img {
+        height: 300px;
+    }
+
+    .veg p,
+    .non-veg p {
+        font-size: 10px;
+
+    }
+}
+
+
+
+footer .ftr-sec {
+    width: 100%;
+    min-height: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.created {
+    color: blue;
+    font-size: 18px;
+}
+
+
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* right se aayega */
+    background-color: #05080a;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 999;
+}
+
+.side-menu a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: azure;
+    display: block;
+}
+
+.side-menu a:hover {
+    background-color: #38393a;
+    color: rgb(163, 233, 14);
+}
+
+.side-menu .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.Menu {
+    background-color: white;
+    width: 40px;
+    height: 30px;
+    padding: 10px 8px;
+}
+
+@media screen and (min-width:768px) {
+    .Menu {
+        /* background-color: white;
+    width: 40px;
+    height: 30px;
+    padding:10px 8px; */
+        display: none;
+    }
+
+}
+
+.reaction-sec {
+    text-align: center;
+    background-color: rgb(5, 6, 5);
+}
+
+.People_react {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 45px;
+    ;
+}
+
+.People_react h2 {
+    font-size: 28px;
+    color: azure;
+}
+
+.people_rect_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 1rem 12rem;
+}
+
+.people_recti_card {
+    /* border: 2px solid rgb(180, 141, 141); */
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    background-color: azure;
+    border-radius: 10px;
+}
+
+.people_recti_card img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+
+
+}
+
+.people_recti_card h3 {
+    font-size: 14px;
+    color: blue;
+}
+
+.people_recti_card p {
+    font-size: 9px;
+}
+
+.people_recti_card:hover img {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:768px) {
+
+    .People_react {
+        padding: 10px;
+    }
+
+    .People_react h2 {
+        font-size: 16px;
+    }
+
+    .people_rect_cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 1rem 1rem;
+    }
+}
+
+.img_sec {
+    width: 100%;
+    background-color: #000000;
+    text-align: center;
+
+}
+
+.img_main_cont {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: auto;
+
+
+
+}
+
+.img_content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
+}
+
+.img_content img {
+    height: 400px;
+    width: 1260px;
+
+    animation: slideer 10s 1s linear infinite backwards;
+    /* overflow: hidden; */
+}
+
+@keyframes slideer {
+    0% {
+        transform: translatex(-1200px);
+
+
+    }
+
+    25% {
+        transform: translatex(0);
+
+    }
+
+    50% {
+        transform: translatex(0);
+
+    }
+
+    100% {
+        transform: translatex(-1250px);
+
+
+    }
+
+}
+
+@media screen and (max-width:768px) {
+
+    .img_content img {
+        height: 200px;
+        width: 700px;
+        animation: slideerm 10s 1s linear infinite backwards;
+    }
+
+    @keyframes slideerm {
+        0% {
+            transform: translatex(-718px);
+
+
+        }
+
+        25% {
+            transform: translatex(0);
+
+        }
+
+        50% {
+            transform: translatex(0);
+
+        }
+
+        100% {
+            transform: translatex(-718px);
+
+
+        }
+
+    }
+
+
+}
+
+.footer_logo_sec {
+    width: 100%;
+    padding: 2rem;
+    background-color: rgb(51, 40, 40);
+}
+
+.footer_logo_content {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: center;
+   */
+    gap: 20px;
+
+}
+
+.logo_box h1 {
+    font-size: 24px;
+
+}
+
+.contect_logos {
+    display: flex;
+    gap: 35px;
+}
+
+.ftr_left_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.ftr_right_box ul {
+    display: flex;
+    gap: 60px;
+}
+
+.left_right_box {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.loc_openin_conct {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    gap: 10px;
+    padding: 1rem 4rem;
+    margin: 0 30px;
+
+}
+
+.opening_box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.opening_box ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.opening_box ul li {
+    font-size: 10px;
+}
+
+.paira {
+    text-align: center;
+
+
+}
+.ftr_right_box ul li{
+    color: white;
+}
+
+.ftr_right_box ul li:hover{
+    color: rgb(84, 16, 220);
+}
+
+.paira h2 {
+    font-size: 20px;
+    color: yellow;
+}
+
+@media screen and (max-width:768px) {
+
+    .left_right_box {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px;
+
+    }
+
+    .ftr_left_box {
+        display: flex;
+        gap: 30px;
+
+    }
+
+    .ftr_right_box ul {
+        display: flex;
+
+        gap: 25px;
+
+
+    }
+
+
+    .loc_openin_conct {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        color: white;
+        gap: 50px;
+        padding: 1rem 1rem;
+      
+
+    }
+
+
+
+
+
+}

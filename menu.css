@@ -1,0 +1,169 @@
+  * {
+      text-align: center;
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+  .logo_box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+  }
+
+  .hdr_logo {
+      height: 30px;
+      border-radius: 50%;
+      box-shadow: 2px 0px 10px white;
+  }
+
+  .hdr_txt {
+      font-size: 25px;
+      font-style: initial;
+      color: rgb(187, 148, 224);
+  }
+
+  .menu_main_box {
+      padding: 1rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+
+
+
+  }
+
+  .veg_menu_box {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+     
+  }
+
+  .menu_card {
+      border: 2px solid yellow;
+      border-radius: 10px;
+      /* overflow: hidden; */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: px;
+      color: white;
+      background-color: rgb(3, 19, 19);
+
+  }
+
+  .menu_card img {
+      width: 100%;
+      height: 150px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+
+
+  }
+
+  .menu_card h3 {
+      font-size: 15px;
+      font-weight: bold;
+      color:azure;
+
+  }
+
+  .menu_card p {
+      font-size: 10px;
+
+  }
+
+  .menu_card span {
+      font-size: 13px;
+      background-color: black;
+      color: white;
+      padding: 2px 5px;
+      margin-bottom: 5px;
+
+  }
+
+  .menu_card:hover img {
+      transform: scale(1.1);
+      border-radius: 80%;
+  }
+
+
+  .non_veg_menu_box {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+
+  }
+
+  .cold-drinks_menu_box {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+
+  }
+
+  footer .ftr-sec {
+    width: 100%;
+    min-height: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.created {
+    color: blue;
+    font-size: 18px;
+}
+
+h2{
+    color: yellow;
+}
+
+body{
+    background-color: black;
+}
+
+@media screen and (max-width:768px){
+
+     .veg_menu_box {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+     }
+
+     .non_veg_menu_box {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+
+  }
+
+  .cold-drinks_menu_box {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+
+  }
+
+   .veg_menu_box h3{
+    color: azure;
+  }
+
+  .non_veg_menu_box h3{
+    color: azure;
+  }
+
+    .cold-drinks_menu_box h3{ 
+    color: azure;
+  }
+
+
+    
+}
